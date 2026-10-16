@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla periódica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button id="cross">Ocultar</button>
+    <header>
+        <div id="header">
+            <ul>
+                <li id="modoNoche">Modo noche</li>
+                <hr>
+                <li id="Game">Jugar</li>
+                <hr>
+                <li id="language">Idioma</li>
+            </ul>
+        </div>  
+    </header>
+    <main>
+        <div id="tableDiv">
+        <table>
+            <tr>
+                <td id="H"><div class="number">1</div>H</td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td id="He" class="gasNoble"><div class="number">2</div>He</td>
+            </tr>
+            <tr>
+                <td id="Li" class="MetalAlcalin"><div class="number">3</div>Li</td>
+                <td id="Be"class="MetalAlcalinoterri"><div class="number">4</div>Be</td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td id="B"class="metaloides"><div class="number">5</div>B</td>
+                <td id="C"class="mNoReactius"><div class="number">6</div>C</td>
+                <td id="N"class="mNoReactius"><div class="number">7</div>N</td>
+                <td id="O"class="mNoReactius"><div class="number">8</div>O</td>
+                <td id="F"class="mNoReactius"><div class="number">9</div>F</td>
+                <td id="Ne" class="gasNoble"><div class="number">10</div>Ne</td>
+            </tr>
+            <tr>
+                <td id="Na"class="MetalAlcalin"><div class="number">11</div>Na</td>
+                <td id="Mg"class="MetalAlcalinoterri"><div class="number">12</div>Mg</td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td id="Al"class="postTransicional"><div class="number">13</div>Al</td>
+                <td id="Si"class="metaloides"><div class="number">14</div>Si</td>
+                <td id="P"class="mNoReactius"><div class="number">15</div>P</td>
+                <td id="S"class="mNoReactius"><div class="number">16</div>S</td>
+                <td id="Cl"class="mNoReactius"><div class="number">17</div>Cl</td>
+                <td id="Ar" class="gasNoble"><div class="number">18</div>Ar</td>
+            </tr>
+            <tr>
+                <td id="K"class="MetalAlcalin"><div class="number">19</div>K</td>
+                <td id="Ca"class="MetalAlcalinoterri"><div class="number">20</div>Ca</td>
+                <td id="Sc" class="metalsTransicio"><div class="number">21</div>Sc</td>
+                <td id="Ti" class="metalsTransicio"><div class="number">22</div>Ti</td>
+                <td id="V"class="metalsTransicio"><div class="number">23</div>V</td>
+                <td id="Cr"class="metalsTransicio"><div class="number">24</div>Cr</td>
+                <td id="Mn"class="metalsTransicio"><div class="number">25</div>Mn</td>
+                <td id="Fe"class="metalsTransicio"><div class="number">26</div>Fe</td>
+                <td id="Co"class="metalsTransicio"><div class="number">27</div>Co</td>
+                <td id="Ni"class="metalsTransicio"><div class="number">28</div>Ni</td>
+                <td id="Cu"class="metalsTransicio"><div class="number">29</div>Cu</td>
+                <td id="Zn"class="metalsTransicio"><div class="number">30</div>Zn</td>
+                <td id="Ga"class="postTransicional"><div class="number">31</div>Ga</td>
+                <td id="Ge"class="metaloides"><div class="number">32</div>Ge</td>
+                <td id="As"class="metaloides"><div class="number">33</div>As</td>
+                <td id="Se"class="mNoReactius"><div class="number">34</div>Se</td>
+                <td id="Br"class="mNoReactius"><div class="number">35</div>Br</td>
+                <td id="Kr" class="gasNoble"><div class="number">36</div>Kr</td>
+            </tr>
+            <tr>
+                <td id="Rb"class="MetalAlcalin"><div class="number">37</div>Rb</td>
+                <td id="Sr"class="MetalAlcalinoterri"><div class="number">38</div>Sr</td>
+                <td id="Y"class="metalsTransicio"><div class="number">39</div>Y</td>
+                <td id="Zr"class="metalsTransicio"><div class="number">40</div>Zr</td>
+                <td id="Nb"class="metalsTransicio"><div class="number">41</div>Nb</td>
+                <td id="Mo"class="metalsTransicio"><div class="number">42</div>Mo</td>
+                <td id="Tc"class="metalsTransicio"><div class="number">43</div>Tc</td>
+                <td id="Ru"class="metalsTransicio"><div class="number">44</div>Ru</td>
+                <td id="Rh"class="metalsTransicio"><div class="number">45</div>Rh</td>
+                <td id="Pd"class="metalsTransicio"><div class="number">46</div>Pd</td>
+                <td id="Ag"class="metalsTransicio"><div class="number">47</div>Ag</td>
+                <td id="Cd"class="metalsTransicio"><div class="number">48</div>Cd</td>
+                <td id="In"class="postTransicional"><div class="number">49</div>In</td>
+                <td id="Sn"class="postTransicional"><div class="number">50</div>Sn</td>
+                <td id="Sb"class="metaloides"><div class="number">51</div>Sb</td>
+                <td id="Te"class="metaloides"><div class="number">52</div>Te</td>
+                <td id="I"class="mNoReactius"><div class="number">53</div>I</td>
+                <td id="Xe" class="gasNoble"><div class="number">54</div>Xe</td>
+            </tr>
+            <tr>
+                <td id="Cs"class="MetalAlcalin"><div class="number">55</div>Cs</td>
+                <td id="Ba"class="MetalAlcalinoterri"><div class="number">56</div>Ba</td>
+                <td id="La"class="Lantanids"><div class="number">57</div>La</td>
+                <td id="Hf"class="metalsTransicio"><div class="number">72</div>Hf</td>
+                <td id="Ta"class="metalsTransicio"><div class="number">73</div>Ta</td>
+                <td id="W"class="metalsTransicio"><div class="number">74</div>W</td>
+                <td id="Re"class="metalsTransicio"><div class="number">75</div>Re</td>
+                <td id="Os"class="metalsTransicio"><div class="number">76</div>Os</td>
+                <td id="Ir"class="metalsTransicio"><div class="number">77</div>Ir</td>
+                <td id="Pt"class="metalsTransicio"><div class="number">78</div>Pt</td>
+                <td id="Au"class="metalsTransicio"><div class="number">79</div>Au</td>
+                <td id="Hg"class="metalsTransicio"><div class="number">80</div>Hg</td>
+                <td id="Tl"class="postTransicional"><div class="number">81</div>Tl</td>
+                <td id="Pb"class="postTransicional"><div class="number">82</div>Pb</td>
+                <td id="Bi"class="postTransicional"><div class="number">83</div>Bi</td>
+                <td id="Po"class="postTransicional"><div class="number">84</div>Po</td>
+                <td id="At"class="postTransicional"><div class="number">85</div>At</td>
+                <td id="Rn" class="gasNoble"><div class="number">86</div>Rn</td>
+            </tr>
+            <tr>
+                <td id="Fr"class="MetalAlcalin"><div class="number">87</div>Fr</td>
+                <td id="Ra"class="MetalAlcalinoterri"><div class="number">88</div>Ra</td>
+                <td id="Ac"class="Actinids"><div class="number">89</div>Ac</td>
+                <td id="Rf"class="metalsTransicio"><div class="number">104</div>Rf</td>
+                <td id="Db"class="metalsTransicio"><div class="number">105</div>Db</td>
+                <td id="Sg"class="metalsTransicio"><div class="number">106</div>Sg</td>
+                <td id="Bh"class="metalsTransicio"><div class="number">107</div>Bh</td>
+                <td id="Hs"class="metalsTransicio"><div class="number">108</div>Hs</td>
+                <td id="Mt" class="desconegut"><div class="number">109</div>Mt</td>
+                <td id="Ds"class="desconegut"><div class="number">110</div>Ds</td>
+                <td id="Rg"class="desconegut"><div class="number">111</div>Rg</td>
+                <td id="Cn"class="desconegut"><div class="number">112</div>Cn</td>
+                <td id="Nh"class="desconegut"><div class="number">113</div>Nh</td>
+                <td id="Fl"class="desconegut"><div class="number">114</div>Fl</td>
+                <td id="Mc"class="desconegut"><div class="number">115</div>Mc</td>
+                <td id="Lv"class="desconegut"><div class="number">116</div>Lv</td>
+                <td id="Ts"class="desconegut"><div class="number">117</div>Ts</td>
+                <td id="Og"class="desconegut"><div class="number">118</div>Og</td>
+            </tr>
+            <tr>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+            </tr>
+            <tr>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td id="Ce"class="Lantanids"><div class="number">58</div>Ce</td>
+                <td id="Pr"class="Lantanids"><div class="number">59</div>Pr</td>
+                <td id="Nd"class="Lantanids"><div class="number">60</div>Nd</td>
+                <td id="Pm"class="Lantanids"><div class="number">61</div>Pm</td>
+                <td id="Sm"class="Lantanids"><div class="number">62</div>Sm</td>
+                <td id="Eu"class="Lantanids"><div class="number">63</div>Eu</td>
+                <td id="Gd"class="Lantanids"><div class="number">64</div>Gd</td>
+                <td id="Tb"class="Lantanids"><div class="number">65</div>Tb</td>
+                <td id="Dy"class="Lantanids"><div class="number">66</div>Dy</td>
+                <td id="Ho"class="Lantanids"><div class="number">67</div>Ho</td>
+                <td id="Er"class="Lantanids"><div class="number">68</div>Er</td>
+                <td id="Tm"class="Lantanids"><div class="number">69</div>Tm</td>
+                <td id="Yb"class="Lantanids"><div class="number">70</div>Yb</td>
+                <td id="Lu"class="Lantanids"><div class="number">71</div>Lu</td>
+            </tr>
+            <tr>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td  class="invisible"></td>
+                <td id="Th"class="Actinids"><div class="number">90</div>Th</td>
+                <td id="Pa"class="Actinids"><div class="number">91</div>Pa</td>
+                <td id="U"class="Actinids"><div class="number">92</div>U</td>
+                <td id="Np"class="Actinids"><div class="number">93</div>Np</td>
+                <td id="Pu"class="Actinids"><div class="number">94</div>Pu</td>
+                <td id="Am"class="Actinids"><div class="number">95</div>Am</td>
+                <td id="Cm"class="Actinids"><div class="number">96</div>Cm</td>
+                <td id="Bk"class="Actinids"><div class="number">97</div>Bk</td>
+                <td id="Cf"class="Actinids"><div class="number">98</div>Cf</td>
+                <td id="Es"class="Actinids"><div class="number">99</div>Es</td>
+                <td id="Fm"class="Actinids"><div class="number">100</div>Fm</td>
+                <td id="Md"class="Actinids"><div class="number">101</div>Md</td>
+                <td id="No"class="Actinids"><div class="number">102</div>No</td>
+                <td id="lr"class="Actinids"><div class="number">103</div>lr</td>
+            </tr>
+        </table>
+        </div>
+
+        
+        <ul id="TypesList">
+            <li id="LiHidrogen">Hidrógeno</li>
+            <li id="LiAlcalin">Metales alcalinos</li>
+            <li id="LiAlcalinoterri">Metales alcalinoterris</li>
+            <li id="LiMetalsTransicio">Metales de transición</li>
+            <li id="LiPostTransicio">Metales postransicionales</li>
+            <li id="LiMetaloides">Metaloides</li>
+            <li id="LiMNoReactius">No metales reactivos</li>
+            <li id="LiGasNoble">Gases Nobles</li>
+            <li id="LiLantanids">Lantánidos</li>
+            <li id="LiActinids">Actínidos</li>
+            <li id="LiDesconegut">Características desconencidas</li>
+        </ul>
+        <ul>
+            <li></li>
+        </ul>
+    </main>
+    <div id="informacion">
+        <button id="exitInfo">Exit</button>
+        <h2 id="GroupTitle"><strong>Tabla periódica</strong></h2>
+        <p id="informacionTitulo"><strong>Información:</strong></p>
+        <p id="GroupInfo">La tabla periódica de los elementos es una disposición de los elementos químicos en forma de tabla, ordenados por su número atómico, por su configuración de electrones y sus propiedades químicas. Este ordenamiento muestra tendencias periódicas como elementos con comportamiento similar en la misma columna.</p>
+    </div>
+</body>
+</html>
