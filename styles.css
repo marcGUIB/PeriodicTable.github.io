@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tableDiv{
+    width: 100%;
+    max-width: 1500px;
+    min-width: 0;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    aspect-ratio: 23 / 10;
+}
+
+#cross{
+    top: 7px;
+    position: absolute;
+    left: 95%;
+    border: 2px solid rgb(0, 0, 122);
+    padding: 3px;
+    width: 65px;
+    border-radius: 10%;
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#exitInfo{
+    position: absolute;
+    font-size: large;
+    left: 85%;
+}
+
+table{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+    font-size: 15px;
+}
+
+td {
+    cursor: default;
+    transition: all 0.1s ease-in;
+    overflow: hidden;
+    border: 1px solid black; 
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+#header {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 25px;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-bottom: solid 1px #aaa;
+    background-color: #eee;
+    overflow: hidden;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in;
+}
+
+#header ul{
+    position: relative;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+ul{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+main{
+    color: black;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    overflow: auto;
+    transition: all 0.3s ease-in;
+}
+
+#informacion{
+    position: absolute;
+    left: 80%;
+    width: 18%;
+    height: 100%;
+}
+
+#H, #LiHidrogen{
+    background-color: rgb(24, 24, 255);
+}
+
+.gasNoble, #LiGasNoble{
+    background-color: rgb(255, 72, 72);
+}
+
+.metalsTransicio, #LiMetalsTransicio{
+    background-color: rgb(120, 62, 255);
+}
+
+.postTransicional, #LiPostTransicio{
+    background-color: rgb(0, 199, 3);
+}
+
+.metaloides, #LiMetaloides{
+    background-color: rgb(207, 207, 0);
+}
+
+.mNoReactius, #LiMNoReactius{
+    background-color: rgb(0, 89, 255);
+}
+
+.MetalAlcalin, #LiAlcalin{
+    background-color: rgb(0, 223, 126);
+}
+
+.MetalAlcalinoterri, #LiAlcalinoterri{
+    background-color: rgb(255, 77, 28);
+}
+
+.Actinids, #LiActinids{
+    background-color: rgb(220, 255, 42);
+}
+
+.desconegut, #LiDesconegut{
+    background-color: rgb(181, 181, 181);
+}
+
+.Lantanids, #LiLantanids{
+    background-color: aquamarine;
+}
+
+td{
+    position: relative;
+}
+
+.number{
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    font-size: 65%;
+}
+
+#TypesList{
+    position: relative;
+    top: 20px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+li{
+    white-space: nowrap;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#informacionTitulo{
+    font-weight: bold;
+}
+
+.invisible{
+border: 0px;
+font-size: larger;
+}
